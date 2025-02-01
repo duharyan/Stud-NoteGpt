@@ -34,7 +34,11 @@ def load_model(model_name):
 # Extract text from PDF
 def extract_txt_pdf(file_path):
     reader = PdfReader(file_path)
-    text = "".join([page.extract_text() or "" for page in reader.pages])
+    text = ""
+    for page in reader.pages:
+        page_text = page.extract_text()
+        if page_text:
+            text += page_text
     return text
 
 # Extract text from PPT
