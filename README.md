@@ -1,4 +1,4 @@
-# Stud_NoteGpt
+# Stud-NoteGpt
 StudNotesGpt is a Streamlit-based multimodal application that allows students to upload their notes in PPTX or PDF format and interact with them through a Retrieval-Augmented Generation (RAG) approach. Users can ask questions about their uploaded notes and get AI-powered answers.
 
 ## Features
